@@ -28,6 +28,7 @@ variable "vpc_id" {
 }
 variable "sg_id" {
   description = "Security group For Environments"
+  type        = list(string)
 }
 variable "key_name" {
   description = "SSH Key Name"
